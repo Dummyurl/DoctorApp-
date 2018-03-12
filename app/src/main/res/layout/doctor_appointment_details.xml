@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_loginActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+
+        <!--User email edt-->
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_email"
+                android:hint="Patient Name"
+                android:text="Mahesh"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:inputType="textEmailAddress"/>
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_key"
+                android:text="Cold Cough"
+                android:hint="Appointment Reason"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:inputType="text"/>
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_cost"
+                android:hint="Appointment Date "
+                android:text="10/10/2017"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:inputType="text"/>
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_tax"
+                android:hint="Appointment Time"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="11:00 AM"
+                android:inputType="text"/>
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_total"
+                android:hint="Notify Patient by"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="SMS"
+                android:inputType="text"/>
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_login"
+        android:text="Edit Appointment"
+        android:textColor="@android:color/black"
+        android:background="@color/cb_grey"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+</RelativeLayout>
+

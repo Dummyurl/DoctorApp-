@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/parent"
+    android:layout_height="match_parent"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    tools:context="com.bfurns.activity.BillingDetails">
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            float:fletPaddingBottom="5dp">
+        <!--float:fletTextAppearance="@style/floatlabelededittext">-->
+
+        <EditText
+            android:id="@+id/service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="Service"
+            android:imeOptions="actionNext"
+            android:inputType="text" />
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            float:fletPaddingBottom="5dp">
+            <!--float:fletTextAppearance="@style/floatlabelededittext">-->
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:hint="Amount(Rs.)"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            float:fletPaddingBottom="5dp">
+            <!--float:fletTextAppearance="@style/floatlabelededittext">-->
+
+            <EditText
+                android:id="@+id/discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:hint="Discount"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+            <Button
+                android:layout_marginLeft="1dp"
+                android:layout_weight="0.5"
+                android:id="@+id/addmore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radius_button_normale"
+                android:text="Add More"
+                android:textColor="#fff" />
+
+
+
+            <LinearLayout
+                android:id="@+id/linearlayout1"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    float:fletPaddingBottom="5dp">
+                    <!--float:fletTextAppearance="@style/floatlabelededittext">-->
+
+                    <EditText
+                        android:id="@+id/oservice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:hint="Service"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    float:fletPaddingBottom="5dp">
+                    <!--float:fletTextAppearance="@style/floatlabelededittext">-->
+
+                    <EditText
+                        android:id="@+id/oamount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:hint="Amount(Rs.)"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    float:fletPaddingBottom="5dp">
+                    <!--float:fletTextAppearance="@style/floatlabelededittext">-->
+
+                    <EditText
+                        android:id="@+id/odiscount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:hint="Discount"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:visibility="gone"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="0.5"
+                android:id="@+id/addmore1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radius_button_normale"
+                android:text="Add More"
+                android:textColor="#fff"/>
+
+
+            <LinearLayout
+                android:id="@+id/linearlayout2"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    float:fletPaddingBottom="5dp">
+                    <!--float:fletTextAppearance="@style/floatlabelededittext">-->
+
+                    <EditText
+                        android:id="@+id/tservice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:hint="Service"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    float:fletPaddingBottom="5dp">
+                    <!--float:fletTextAppearance="@style/floatlabelededittext">-->
+
+                    <EditText
+                        android:id="@+id/tamount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:hint="Amount(Rs.)"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    float:fletPaddingBottom="5dp">
+                    <!--float:fletTextAppearance="@style/floatlabelededittext">-->
+
+                    <EditText
+                        android:id="@+id/tdiscount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:hint="Discount"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+
+
+
+            </LinearLayout>
+            <Button
+                android:visibility="gone"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="0.5"
+                android:id="@+id/addmore2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radius_button_normale"
+                android:text="Add More"
+                android:textColor="#fff"/>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linearlayout3"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    float:fletPaddingBottom="5dp">
+                    <!--float:fletTextAppearance="@style/floatlabelededittext">-->
+
+                    <EditText
+                        android:id="@+id/fservice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:hint="Service"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    float:fletPaddingBottom="5dp">
+                    <!--float:fletTextAppearance="@style/floatlabelededittext">-->
+
+                    <EditText
+                        android:id="@+id/famount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:hint="Amount(Rs.)"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    float:fletPaddingBottom="5dp">
+                    <!--float:fletTextAppearance="@style/floatlabelededittext">-->
+
+                    <EditText
+                        android:id="@+id/fdiscount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:hint="Discount"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_marginLeft="1dp"
+                android:layout_weight="0.5"
+                android:id="@+id/add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radius_button_normal"
+                android:text="Add"
+                android:textColor="#fff" />
+
+
+            </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

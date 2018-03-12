@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bfurns">
+
+    <uses-sdk tools:overrideLibrary="com.eqot.fontawesome" />
+
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".application.AppClass"
+        android:allowBackup="true"
+        android:configChanges="orientation"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme"
+        android:windowSoftInputMode="stateHidden"
+        tools:replace="android:icon,android:theme,android:label">
+        <activity android:name=".ziffylink.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.BillingDetails" />
+        <activity
+            android:name=".ziffylink.LoginActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ziffylink.ForgotActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.StepOneActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.StepThreeActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.StepFourActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.AddServiceActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.CalenderViewActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.AddAppointmentActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.AppointmentListActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.AppointmentDetailsActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.PatientListActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.PatientProfileActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activity.BillActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            />
+        <activity android:name=".activity.AddBillActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation" />
+        <activity android:name=".activity.RevenueActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            />
+        <activity
+            android:name=".activity.ConsultActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity
+            android:name=".activity.AskQuestionActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.AnswerQueriesActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.StepTwoActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.AddDoctorActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.AddStaffActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.StepThreeStaffActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.TodayAppintment"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.DoctorProfile"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.ScheduleManagement"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.PatientDetails"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.PatientDetailsForm"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.TabActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.RecommendationTest"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.MedicationHistory"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.PrescribeActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.PatientHistory"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".consult.AskQuestionActiivty"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".consult.AddQuestionActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".consult.MyDoctorsActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".consult.AskQuestionDetails"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+
+
+        <!-- Firebase Notifications -->
+        <service android:name=".services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".services.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <!-- ./Firebase Notifications -->
+
+        <activity android:name=".activity.PieChartActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            />
+        <activity android:name=".activity.BarGraphActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            />
+        <activity android:name=".activity.ConsultReplyActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            />
+        <activity android:name=".activity.DoctorReplyActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            />
+        <activity
+            android:name=".activity.DoctorToDoctorActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_doctor_to_doctor"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.PostMail"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.SummeryActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.FilterActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.DoctorListActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ziffylink.MergeAccount"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activity.PDFActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            />
+        <activity
+            android:name=".activity.PerFormanceActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activity.ViewAccounts" />
+        <activity
+            android:name=".activity.MAccountClinicList"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.ClinicListInDrawer"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.UpdateProfile"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activity.DetailsMedication"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.CategoryListActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.CityListActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagell"
+                android:layout_margin="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/c"
+                        float:cardCornerRadius="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:text="Is Patient checked? "
+                            android:textColor="@color/green"
+                            android:padding="10dp"
+                            android:id="@+id/checkbox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                      <TextView
+                          android:layout_marginBottom="10dp"
+                          android:visibility="gone"
+                          android:layout_marginTop="5dp"
+                          android:id="@+id/save"
+                          android:layout_marginLeft="80dp"
+                            android:background="@color/green"
+                            android:padding="10dp"
+                            android:layout_weight="0.4"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Save"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                             />
+
+
+
+                    </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:background="@color/textview_backgroung"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Personal Details"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size" />
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Name:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <include layout="@layout/item_devider" />
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Gender:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/P_gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                    <include layout="@layout/item_devider" />
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Height:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/height"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+
+
+
+                    <include layout="@layout/item_devider" />
+
+
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Weight:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <include layout="@layout/item_devider" />
+
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Age:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/age"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+
+                    <include layout="@layout/item_devider" />
+
+                    <android.support.v7.widget.CardView
+                        cardCornerRadius="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <RelativeLayout
+                            android:id="@+id/imagell"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_below="@+id/toolbar"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/bodyblue" />
+
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <include layout="@layout/item_devider" />
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Temp:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/Temp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+                    <include layout="@layout/item_devider" />
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="BP:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/bp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+                    <include layout="@layout/item_devider" />
+
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="PLUSE:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/PLUSE"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+                    <include layout="@layout/item_devider" />
+
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="RESP:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/RESP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+
+                    <include layout="@layout/item_devider" />
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="O2SAT:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/O2SAT"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+                    <include layout="@layout/item_devider" />
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Pain:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/Pain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+
+                    <include layout="@layout/item_devider" />
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Problem:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/problem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+                    <include layout="@layout/item_devider" />
+
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Duration:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/duration"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+                    <include layout="@layout/item_devider" />
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Medicine:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/medicin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+                    <include layout="@layout/item_devider" />
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Since:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/since"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+                    <include layout="@layout/item_devider" />
+
+
+                    <TextView
+                        android:padding="10dp"
+                        android:background="@color/textview_backgroung"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Medication Details"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size" />
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Allergies:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/allergies"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+
+
+                    <include layout="@layout/item_devider" />
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Current Medicine:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/c_medicine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+
+                    <include layout="@layout/item_devider" />
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Past Medicine:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/p_medicine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+
+
+                    <include layout="@layout/item_devider" />
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Diseases:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/diseases"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+
+                    <include layout="@layout/item_devider" />
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Injuries:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/injuries"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+                    <include layout="@layout/item_devider" />
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Surgeries:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/surgeries"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+                    <include layout="@layout/item_devider" />
+                    <TextView
+                        android:padding="10dp"
+                        android:background="@color/textview_backgroung"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Life Style Details"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size" />
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Occupation:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/occupation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+
+                    <include layout="@layout/item_devider" />
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Smoking:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/smoking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+
+
+                    <include layout="@layout/item_devider" />
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Alcohol:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/alcohol"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+                    <include layout="@layout/item_devider" />
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Activity level:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/activity_level"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+                    <include layout="@layout/item_devider" />
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Food:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/food"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/text_size" />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu_red"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        float:menu_labels_style="@style/menu_labels_style"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true"
+        fab:menu_backgroundColor="#80000000"
+ >
+
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab2"
+            android:background="#3949AB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            fab:fab_size="mini"
+            fab:fab_label="Recommandation Test" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            fab:fab_size="mini"
+            fab:fab_label="Prescription" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            fab:fab_size="mini"
+            android:background="@color/green"
+            fab:fab_label="Medication History" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            fab:fab_size="mini"
+            android:background="#26C6DA"
+            fab:fab_label="Patient History" />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+
+</RelativeLayout>

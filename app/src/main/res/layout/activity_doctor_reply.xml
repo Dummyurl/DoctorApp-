@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/parent"
+    android:layout_height="match_parent"
+    tools:context="com.bfurns.activity.DoctorReplyActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/toolbar"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="1dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearlayout"
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/to"
+                    android:text="To"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:background="@drawable/edittext_shadow"
+                    android:id="@+id/name"
+                    android:text="Patient Name"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/item_devider"/>
+
+
+                <TextView
+                    android:id="@+id/o"
+                    android:text="From"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:background="@drawable/edittext_shadow"
+                    android:layout_marginTop="5dp"
+                    android:hint="doctor_name"
+                    android:id="@+id/from"
+                    android:textStyle="bold|italic"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/item_devider"/>
+
+
+
+                <TextView
+                    android:id="@+id/title"
+                    android:text="Title"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:background="@drawable/edittext_shadow"
+                    android:layout_marginTop="5dp"
+                    android:hint="subject"
+                    android:id="@+id/titlee"
+                    android:textStyle="bold|italic"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+                <TextView
+                    android:id="@+id/Description"
+                    android:text="Description"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/description"
+                        android:hint="Enter Your Reply"
+                        android:maxLines="3"
+                        android:padding="10dp"
+                        android:background="@drawable/edittext_shadow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/linearlayout"
+                    android:layout_marginLeft="1dp"
+                    android:id="@+id/send"
+                    android:text="send"
+                    android:textColor="@color/white"
+                    android:background="@drawable/radius_button_normale"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

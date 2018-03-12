@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bfurns.activity.ConsultReplyActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="1dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/view_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+
+                    android:id="@+id/linearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        app:cardBackgroundColor="#ff7c4c"
+                        app:cardCornerRadius="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/mmm"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#f1f1f1"
+                                android:padding="10dp"
+                                android:text="From Reply:"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:padding="10dp"
+                                android:text="Patient Name"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/To"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:padding="10dp"
+                                android:text="Patient Name"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/title"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:padding="10dp"
+                                android:text="title"
+                                android:textColor="@color/white"
+                                android:textStyle="bold|italic" />
+
+
+                            <TextView
+                                android:id="@+id/dateTime"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:padding="10dp"
+                                android:text="dateTime"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/description"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:hint="Description"
+                                android:padding="10dp"
+                                android:textColor="@color/white" />
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!-- <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:padding="10dp"
+                            android:text="From :" />
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:padding="10dp"
+                            android:text="Patient Name"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:padding="10dp"
+                            android:text="To :" />
+
+                        <TextView
+                            android:id="@+id/To"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:padding="10dp"
+                            android:text="Patient Name"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:padding="10dp"
+                            android:text="Subject:" />
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:padding="10dp"
+                            android:text="title"
+                            android:textStyle="bold|italic" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:padding="10dp"
+                            android:text="Date:" />
+
+                        <TextView
+                            android:id="@+id/dateTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:padding="10dp"
+                            android:text="dateTime" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:hint="Description:"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:id="@+id/description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:hint="Description"
+                            android:padding="10dp" />
+
+
+                    </LinearLayout>-->
+
+
+                    <Button
+
+                        android:id="@+id/reply"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radius_button_normal"
+                        android:text="reply"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/linearlayoutt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/to"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+
+                            android:text="To"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/namee"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_shadow"
+                            android:padding="10dp"
+                            android:text="Patient Name" />
+
+
+                        <TextView
+                            android:id="@+id/o"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+
+                            android:text="From"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/from"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_shadow"
+                            android:hint="Enter Doctor Name"
+                            android:padding="10dp" />
+
+
+                        <TextView
+                            android:id="@+id/titlee"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+
+                            android:text="Title"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/titleee"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_shadow"
+                            android:hint="subject"
+                            android:padding="10dp" />
+
+
+                        <TextView
+                            android:id="@+id/Description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Description"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:id="@+id/descriptione"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext_shadow"
+                            android:hint="Enter Your Reply"
+                            android:maxLines="3"
+                            android:padding="10dp" />
+
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/send"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linearlayoutt"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radius_button_normale"
+                        android:text="send"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+
+
+                <android.support.v7.widget.CardView
+
+                    android:id="@+id/patientreply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#ff7c4c"
+                    app:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/gggg"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:background="#f1f1f1"
+                            android:padding="10dp"
+                            android:text="Previous Doctornamechat:"
+                            android:textColor="@color/black" />
+
+
+                        <TextView
+                            android:id="@+id/aaa"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:padding="10dp"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/aa"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:padding="10dp"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/bb"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:padding="10dp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/cc"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:padding="10dp"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/dd"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:padding="10dp"
+                            android:textColor="@color/white" />
+
+                        <!--  <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:weightSum="1">
+
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="0.5"
+                                  android:padding="10dp"
+                                  android:textColor="@color/black"
+
+                                  android:text="From:" />
+
+
+                              <TextView
+                                  android:id="@+id/aaa"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="0.5"
+                                  android:padding="10dp" />
+
+
+                          </LinearLayout>
+
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:weightSum="1">
+
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="0.5"
+                                  android:padding="10dp"
+                                  android:textColor="@color/black"
+
+                                  android:text="To:" />
+
+                              <TextView
+                                  android:id="@+id/aa"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="0.5"
+                                  android:padding="10dp" />
+
+                          </LinearLayout>
+
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:weightSum="1">
+
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_weight="0.5"
+                                  android:textColor="@color/black"
+
+                                  android:padding="10dp"
+                                  android:text="Subject:" />
+
+                              <TextView
+                                  android:id="@+id/bb"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_weight="0.5"
+                                  android:padding="10dp"
+                                  android:textStyle="bold|italic" />
+
+                          </LinearLayout>
+
+
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:weightSum="1">
+
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_weight="0.5"
+                                  android:padding="10dp"
+                                  android:textColor="@color/black"
+
+                                  android:text="Date:" />
+
+                              <TextView
+                                  android:id="@+id/cc"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_weight="0.5"
+                                  android:padding="10dp" />
+
+                          </LinearLayout>
+
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:weightSum="1">
+
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="0.5"
+                                  android:padding="10dp"
+                                  android:textColor="@color/black"
+
+                                  android:text="Description:" />
+
+                              <TextView
+                                  android:id="@+id/dd"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="0.5"
+                                  android:padding="10dp" />
+
+
+                          </LinearLayout>-->
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/doctorreply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#6fdc6f"
+                    app:cardCornerRadius="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/hhhh"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#f1f1f1"
+                            android:padding="10dp"
+                            android:text="From Reply:"
+                            android:textColor="@color/black" />
+
+
+                        <!--   <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:textColor="@color/white"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:padding="10dp"
+                                android:text="From:" />-->
+
+                        <TextView
+                            android:id="@+id/ddde"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:padding="5dp"
+                            android:textColor="@color/white" />
+                        <!--</LinearLayout>-->
+
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1">-->
+
+                        <!--<TextView-->
+                        <!--android:textColor="@color/black"-->
+
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="0.5"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:text="To:" />-->
+
+                        <TextView
+                            android:id="@+id/ddd"
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:padding="5dp"
+                            android:textColor="@color/white" />
+
+                        <!--   </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+
+                            android:text="Subject:" />
+-->
+                        <TextView
+                            android:id="@+id/ee"
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:padding="5dp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold|italic" />
+
+
+                        <!--</LinearLayout>-->
+
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1">-->
+
+                        <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="0.5"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:textColor="@color/black"-->
+
+                        <!--android:text="Date:" />-->
+                        <TextView
+                            android:id="@+id/ff"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:padding="5dp"
+                            android:textColor="@color/white" />
+                        <!--</LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:text="Description:" />-->
+                        <TextView
+                            android:id="@+id/gg"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:padding="5dp"
+                            android:textColor="@color/white" />
+
+                        <!--</LinearLayout>-->
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

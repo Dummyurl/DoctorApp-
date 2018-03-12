@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="4dp"
+                    android:id="@+id/cv_find_a_doctor"
+                    app:cardBackgroundColor="@android:color/white"
+                    android:layout_margin="3dp">
+
+                    <LinearLayout
+                        android:id="@+id/today_appointment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:id="@+id/iv_scanin"
+                            android:src="@drawable/todaysapp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_scanin"
+                            android:text="Today's Appointment"
+                            android:textColor="@android:color/black"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/total_count"
+                            android:textStyle="bold"
+                            android:textColor="@color/green"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"/>
+
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="4dp"
+                    android:id="@+id/cv_records"
+                    app:cardBackgroundColor="@android:color/white"
+                    android:layout_margin="3dp">
+
+                    <LinearLayout
+                        android:id="@+id/weeklyApp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:id="@+id/iv_options"
+                            android:src="@drawable/monthlyapp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Weekly &amp; Monthly Appointment"
+                            android:textColor="@android:color/black"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/total_countt"
+                            android:textStyle="bold"
+                            android:textColor="@color/green"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"/>
+
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                  <android.support.v7.widget.CardView
+                      android:layout_width="match_parent"
+                      android:layout_height="130dp"
+                      android:layout_weight="1"
+                      app:cardCornerRadius="4dp"
+                      android:id="@+id/cv_recordss"
+                      app:cardBackgroundColor="@android:color/white"
+                      android:layout_margin="3dp">
+
+                      <RelativeLayout
+                          android:id="@+id/icu"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical"
+                          android:gravity="center">
+
+                          <ImageView
+                              android:layout_width="wrap_content"
+                              android:layout_height="70dp"
+                              android:id="@+id/iv_optionss"
+                              android:src="@drawable/icu"
+                              android:layout_centerHorizontal="true"
+                              android:layout_centerVertical="true"/>
+
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:text="ICU"
+                              android:textColor="@android:color/black"
+                              android:layout_alignParentBottom="true"
+                              android:layout_centerHorizontal="true"/>
+
+                      </RelativeLayout>
+                  </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_order_medicinee"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="4dp">
+
+                    <RelativeLayout
+                        android:id="@+id/revenue"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/iv_archivee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/persormance" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="Performance"
+                            android:textColor="@android:color/black" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/cb_grey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+              android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold|italic"
+                    android:text="Today's Appointments:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+              <!--  <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/swipeToRefresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v4.widget.SwipeRefreshLayout>
+
+              -->
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:textSize="@dimen/text_sizee"
+                    android:id="@+id/no_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/menu_rede"
+        android:src="@drawable/refresh"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        >
+    </com.github.clans.fab.FloatingActionButton>
+</RelativeLayout>

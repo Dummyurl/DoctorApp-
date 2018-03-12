@@ -1,0 +1,236 @@
+<resources>
+    <string name="app_name">Doctor App</string>
+    <string name="drawer_open">Menu</string>
+    <string name="drawer_close">Menu</string>
+    <string name="rs">\u20B9</string>
+    <string name="facebook_app_id">1064802723639528</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="service_item_name">Practice Name</string>
+    <string name="enter_practice_name">Enter Service Name</string>
+    <string name="enter_consult_doctor">Enter Consult Doctor</string>
+    <string name="enter_cost">Enter Cost</string>
+    <string name="select_tax">Select Tax</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="add">Add</string>
+    <string name="appointment">Weekly &amp; Monthly Appointement</string>
+
+    <!--Validation text-->
+    <string name="please_enter_your_name">Please enter your Name</string>
+    <string name="please_enter_your_phone_no">Please enter your Phone no.</string>
+    <string name="please_enter_valid_phone_no">Please enter valid Phone no.</string>
+    <string name="please_enter_your_email_phone">Please enter your Email or Phone</string>
+    <string name="please_enter_your_email_id">Please enter your Email id</string>
+    <string name="please_enter_valid_email_address">Please enter valid Email id</string>
+    <string name="please_enter_password">Please enter your Password</string>
+    <string name="password_should_be_6_character_in_length">Password should be 6 character in length</string>
+    <string name="password_is_too_long">Password is too long</string>
+    <string name="password_should_contain">Password should contain at least(1 character,1 number and 1 symbol)</string>
+    <string name="connection_failed">Connction Failed...</string>
+    <string name="success">Success...</string>
+    <string name="failed">Failed...</string>
+    <string name="notavailable">Appointments are not available</string>
+    <string name="notavailable1">Doctor Info is not available</string>
+    <string name="weekly">Weekly Appointment</string>
+    <string name="monthly">Monthly Appointment</string>
+
+    <string name="new_user_created">New user created successfully...</string>
+    <string name="please_enter_valid_details">Please enter valid details</string>
+    <string name="no_chats">No Chat </string>
+    <string name="details_not_available">Details are not available</string>
+    <string name="please_enter_old_password">Please enter old password</string>
+    <string name="please_enter_new_password">Please enter new password</string>
+    <string name="please_confirm_the_password">Please confirm the password</string>
+    <string name="reset_password_link_send_on_email">Reset Password link has been sent to your email..</string>
+    <string name="reset_password_successfully">Reset password successfully...</string>
+    <string name="meal_plan_not_available">Meal plan not available</string>
+
+    <!--icons-->
+    <string name="pateint_name">&#xf007;</string>
+    <string name="mode">&#xf2c1;</string>
+    <string name="category">&#xf2e0;</string>
+    <string name="time">&#xf017;</string>
+    <string name="date_icon">&#xf073;</string>
+    <string name="contact">&#xf098;</string>
+    <string name="hospital">&#xf0f8;</string>
+
+    <!--Fontawsome icons-->
+    <string name="userId">&#xf084;</string>
+    <string name="icon">&#xf007;</string>
+    <string name="tag_icon">&#xf292;</string>
+    <string name="email_icon">&#xf0e0;</string>
+    <string name="phone_icon">&#xf10b;</string>
+    <string name="landline_icon">&#xf095;</string>
+    <string name="c_icon">&#xf279;</string>
+    <string name="s_icon">&#xf041;</string>
+    <string name="city_icon">&#xf276;</string>
+    <string name="descrioption_icon">&#xf15b;</string>
+    <string name="lD_icon">&#xf15c;</string>
+    <string name="established">&#xf19c;</string>
+    <string name="website_icon">&#xf0ac;</string>
+    <string name="certificate_icon">&#xf0a3;</string>
+    <string name="lic_icon">&#xf2c2;</string>
+    <string name="payment_method_ic">&#xf283;</string>
+    <string name="lang_icon">&#xf2a3;</string>
+    <string name="catgory_icon">&#xf02c;</string>
+    <string name="sub_categry_icon">&#xf1c0;</string>
+    <string name="locale_icon">&#xf234;</string>
+    <string name="serv_area">&#xf1fe;</string>
+    <string name="working_day_icon">&#xf073;</string>
+    <string name="clock">&#xf017;</string>
+    <string name="logo">&#xf164;</string>
+    <string name="spetiality_icon">&#xf0f2;</string>
+    <string name="business_type_icon">&#xf275;</string>
+    <string name="adevertisement_type_icon">&#xf170;</string>
+
+    <!--  BAsic details Icon -->
+    <string name="map_icon">&#xf041;</string>
+    <string name="clock_icon">&#xf017;</string>
+    <string name="calander_icon">&#xf073;</string>
+    <string name="cake_icon">&#xf1fd;</string>
+    <string name="home_icon">&#xf015;</string>
+    <string name="marital_status_icon">&#xf004;</string>
+    <string name="child_liv_sts_icon">&#xf2c0;</string>
+    <string name="no_of_child_icon">&#xf0c0;</string>
+    <string name="gender_icon">&#xf007;</string>
+    <string name="blood">&#xf043;</string>
+    <string name="mother_tong_icon">&#xf1ab;</string>
+    <string name="religion_icon">&#xf0a2;</string>
+    <string name="cast_icon">&#xf25e;</string>
+    <string name="abt_me_icon">&#xf29e;</string>
+
+    <!--  Contact details Icon -->
+    <string name="mobile_icon">&#xf10b;</string>
+    <string name="landlin_icon">&#xf098;</string>
+    <string name="address_icon">&#xf015;</string>
+    <string name="pincode_icon">&#xf276;</string>
+    <string name="res_status_icon">&#xf145;</string>
+    <string name="edu_icon">&#xf19d;</string>
+
+    <string name="occu_icon">&#xf0f2;</string>
+    <string name="group_icon">&#xf0c0;</string>
+    <string name="dollar_icon">&#xf155;</string>
+
+    <string name="industry_icon">&#xf275;</string>
+    <string name="empat_icon">&#xf19c;</string>
+    <string name="money_icon">&#xf0d6;</string>
+    <string name="pencil_icon">&#xf044;</string>
+    <string name="football_icon">&#xf1e3;</string>
+    <string name="thumbsup_icon">&#xf087;</string>
+    <string name="search_icon">&#xf002;</string>
+    <string name="height_icon">&#xf034;</string>
+    <string name="smile_icon">&#xf118;</string>
+    <string name="weight_icon">&#xf24e;</string>
+    <string name="bodytype_icon">&#xf29a;</string>
+    <string name="drop_icon">&#xf043;</string>
+    <string name="diet_icon">&#xf0f5;</string>
+    <string name="smoke_icon">&#xf1b6;</string>
+    <string name="drink_icon">&#xf000;</string>
+    <string name="handicap_icon">&#xf193;</string>
+    <string name="manglik_icon">&#xf222;</string>
+    <string name="horoscope_icon">&#xf005;</string>
+    <string name="gothra_icon">&#xf1e5;</string>
+    <string name="female_icon">&#xf182;</string>
+    <string name="male_icon">&#xf183;</string>
+    <string name="licen_icon">&#xf2c3;</string>
+
+
+    <!--************************************************* medical Font ********************************************************-->
+    <string name="Detail_ic">&#xf05a;</string>
+    <string name="timeing_ic">&#xf017;</string>
+    <string name="phone_ic">&#xf098;</string>
+    <string name="website_ic">&#xf0ac;</string>
+    <string name="person_ic">&#xf007;</string>
+    <string name="mobile_ic">&#xf10b;</string>
+    <string name="email_ic">&#xf0e0;</string>
+    <string name="designation_ic">&#xf0b1;</string>
+    <string name="medical_ic">&#xf0f8;</string>
+    <string name="add_ic">&#xf015;</string>
+    <string name="category_icon">&#xf0b1;</string>
+
+
+    <!--************************************************* medical Font ********************************************************-->
+
+
+    <!--*********************************************EDUCATION MODULE***************************************************************-->
+
+    <!--educationfont-->
+    <string name="dob_ic">&#xf1fd;</string>
+    <string name="country_ic">&#xf279;</string>
+    <string name="state_ic">&#xf041;</string>
+    <string name="city_ic">&#xf276;</string>
+    <string name="gender_ic">&#xf225;</string>
+    <string name="pincode_ic">&#xf08d;</string>
+
+    <string name="occupation_ic">&#xf0f2;</string>
+    <string name="pan_card_ic">&#xf05a;</string>
+    <string name="religion_ic">&#xf25d;</string>
+    <string name="result_ic">&#xf19c;</string>
+    <string name="school_ic">&#xf19c;</string>
+    <string name="rollno_ic">&#xf162;</string>
+    <string name="year_ic">&#xf073;</string>
+    <string name="percentage_ic">&#xf295;</string>
+    <string name="rank_ic">&#xf006;</string>
+    <string name="degree_ic">&#xf19d;</string>
+    <string name="facility_ic">&#xf0f7;</string>
+    <string name="language_ic">&#xf1ab;</string>
+    <string name="subject_ic">&#xf02d;</string>
+    <string name="extra_activity_ic">&#xf055;</string>
+    <string name="leval_ic">&#xf148;</string>
+
+    <string name="title_activity_weekly_mothly_appointment">WeeklyMothlyAppointment</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="Name">Name</string>
+    <string name="age">Age</string>
+    <string name="Email">Email ID</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="dob">Date of Birth*</string>
+    <string name="blood_grpoup">Blood Group</string>
+    <string name="Marital_status">Marital Status</string>
+    <string name="Height">Height</string>
+    <string name="Weight">Weight</string>
+    <string name="EmergencyContact">Emergency Contact</string>
+    <string name="Location">Locality</string>
+    <string name="Allergies">Add Allergies</string>
+    <string name="CurrentMedications">Current Medications</string>
+    <string name="PastMedications">Past Medications</string>
+    <string name="ChronicDiseases">Chronic Diseases</string>
+    <string name="Injuries">Injuries</string>
+    <string name="Surgeries">Surgeries</string>
+    <string name="Occupation">Occupation</string>
+    <string name="Smoking">Smoking</string>
+    <string name="type_occup">IT/ Health/ Government/ Private/ Etc.</string>
+    <string name="type_smoking">Number of Ciggarettes per day</string>
+    <string name="AlcoholConsumption">Alcohol Consumption</string>
+    <string name="ActivityLevel">Activity Level</string>
+    <string name="FoodPreferences">Food Preferences</string>
+    <string name="marride">Married</string>
+    <string name="unmarride">Single</string>
+    <string name="allergies">Allergies</string>
+
+    <string name="currentMedications">Current medicines</string>
+    <string name="pastMedications">Past medicines</string>
+    <string name="chronicDiseases">Chronic Diseases</string>
+    <string name="injuries">Injuries</string>
+    <string name="surgeries">Surgeries</string>
+    <string name="occupation">Occupation</string>
+    <string name="smoking">Smoking</string>
+    <string name="alcoholConsumption">Alcohol Consumption</string>
+
+
+    <!-- END LOGIN SCREEN -->
+    <string name="address">Address :</string>
+    <string name="phone">Phone :</string>
+    <string name="enter_phone">Enter Phone</string>
+    <string name="enter_bdy">Enter Birthday</string>
+    <string name="default_notification_channel_id">default_notification_channel_id</string>
+    <string name="title_activity_doctor_to_doctor">DoctorToDoctorActivity</string>
+
+</resources>

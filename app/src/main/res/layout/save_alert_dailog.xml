@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/alertTitle"
+        android:padding="10dp"
+        android:text="TITLE"
+        android:background="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:checked="false"
+            android:id="@+id/checkbox"
+            android:layout_weight="0.9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Is Patient Checked"
+            android:id="@+id/text"
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+<!--    <LinearLayout
+        android:weightSum="1"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@drawable/radius_button_normal"
+            android:text="Cancle"
+            android:layout_marginRight="1dp"
+            android:textColor="@color/white"
+            android:id="@+id/cancel"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_marginLeft="1dp"
+            android:textColor="@color/white"
+            android:background="@drawable/radius_button_normale"
+            android:id="@+id/save"
+            android:text="Save"
+
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>-->
+</LinearLayout>

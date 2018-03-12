@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_loginActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+
+        <!--User email edt-->
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_email"
+                android:hint="Consulation charges for app based chat version"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:inputType="textEmailAddress"/>
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telephonic Consulation Charges"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:inputType="textEmailAddress"/>
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

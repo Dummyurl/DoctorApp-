@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="DoctorApp">
+        <item>My Profile</item>
+        <item>Schedule Management</item>
+        <item>Patient Management</item>
+        <item>Report</item>
+        <item>Consult</item>
+    </string-array>
+
+    <string-array name="MyProfile">
+        <item>Edit Profile</item>
+        <item>View Profile</item>
+
+    </string-array>
+
+
+    <string-array name="schedule">
+        <item>Appointment Details</item>
+
+    </string-array>
+
+    <string-array name="patent">
+        <item>Patient Details</item>
+        <item>Patient Billing</item>
+
+    </string-array>
+    <string-array name="consult">
+        <item>Ask Question &amp; Answer</item>
+        <item>Patient Billing</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cb_grey"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:layout_margin="10dp"
+        android:background="@color/cb_grey"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="1dp"
+        card_view:cardMaxElevation="1dp"
+        card_view:contentPadding="5dp">
+
+
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="0.7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image"
+                    android:layout_gravity="center"
+                    android:src="@drawable/placeholder_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_weight="0.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.bfurns.utility.FontAwsome
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:text="@string/pateint_name"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:text="Patient Name "
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+<include layout="@layout/item_devider"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.bfurns.utility.FontAwsome
+                    android:textSize="19sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:text="@string/mode"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Mode Of Appointement"
+                    android:textColor="@color/black"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+            <include layout="@layout/item_devider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.bfurns.utility.FontAwsome
+                    android:textSize="20sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:text="@string/category"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="category"
+                    android:textColor="@color/black"
+                    android:textStyle="italic" />
+
+
+            </LinearLayout>
+            <include layout="@layout/item_devider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.bfurns.utility.FontAwsome
+                    android:textSize="20sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:text="@string/time"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Time"
+                    android:textColor="@color/black"
+                    android:textStyle="italic" />
+
+
+            </LinearLayout>
+            <include layout="@layout/item_devider"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.bfurns.utility.FontAwsome
+                    android:textSize="@dimen/text_size"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:text="@string/date_icon"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Date"
+                    android:textColor="@color/black"
+                    android:textStyle="italic" />
+
+
+            </LinearLayout>
+            <include layout="@layout/item_devider"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.bfurns.utility.FontAwsome
+                    android:textSize="@dimen/text_size"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:text="@string/fa_phone"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Phone"
+                    android:textColor="@color/black"
+                    android:textStyle="italic" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

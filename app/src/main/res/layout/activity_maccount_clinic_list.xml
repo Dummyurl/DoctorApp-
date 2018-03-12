@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent"
+    tools:context="com.bfurns.activity.MAccountClinicList">
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/list_item"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--
+
+     <TextView
+         android:gravity="center"
+         android:text="Would you like to merge accounts.Please enter user email and password."
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="5dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/emaill"
+                android:imeOptions="actionNext"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:hint="User Name" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="5dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/passw"
+                android:imeOptions="actionNext"
+                android:drawablePadding="10dp"
+                android:inputType="textPassword"
+                android:hint="Your Password" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="5dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/c_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/passw"
+                android:imeOptions="actionNext"
+                android:drawablePadding="10dp"
+                android:inputType="textPassword"
+                android:hint="Confirm Password" />
+
+        </android.support.design.widget.TextInputLayout>
+-->
+
+        <Button
+            android:id="@+id/login"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/radius_button_normale"
+            android:text="Merge Account"
+            android:paddingLeft="10dp"
+            android:textColor="#ffffff"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_loginActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+
+        <!--User email edt-->
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/product"
+                android:hint="Select Products"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:inputType="textEmailAddress"/>
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/discount"
+                android:hint="Discount"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:inputType="text"/>
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amount"
+                android:hint="Amount"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:inputType="text"/>
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+        <ListView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add"
+        android:text="Add Item"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+</RelativeLayout>
+

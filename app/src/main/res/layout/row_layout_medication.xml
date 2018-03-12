@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_margin="10dp"
+
+        app:cardCornerRadius="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Medicine"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/drug_name"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+
+                    android:textSize="@dimen/text_size" />
+
+
+            </LinearLayout>
+            <include layout="@layout/item_devider"/>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Strength"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:padding="10dp"
+
+                    android:id="@+id/strength"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size" />
+
+
+            </LinearLayout>
+            <include layout="@layout/item_devider"/>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Take"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:padding="10dp"
+
+                    android:id="@+id/take"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="10dp"
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size" />
+
+
+            </LinearLayout>
+            <include layout="@layout/item_devider"/>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Quantity"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:padding="10dp"
+
+                    android:id="@+id/quantity"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="10dp"
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size" />
+
+
+            </LinearLayout>
+            <include layout="@layout/item_devider"/>
+
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Duration"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:padding="10dp"
+
+                    android:id="@+id/duration"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+            <include layout="@layout/item_devider"/>
+
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Slot"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size" />
+
+<!--
+                <LinearLayout
+                    android:layout_weight="0.3"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:weightSum="5"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <CheckBox
+                            android:text="M"
+                            android:id="@+id/morning"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <CheckBox
+                            android:text="A"
+                            android:id="@+id/afternoon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <CheckBox
+                            android:text="E"
+
+                            android:id="@+id/evening"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <CheckBox
+                            android:id="@+id/night"
+                            android:text="N"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <CheckBox
+                            android:text="W"
+                            android:id="@+id/week"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                </LinearLayout>-->
+                <TextView
+                    android:padding="10dp"
+
+                    android:id="@+id/slot"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+<!--
+
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="4dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:weightSum="6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Medicine"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size" />
+
+                <Button
+                    android:layout_weight="1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Strength"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size" />
+                <Button
+                    android:layout_weight="1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Take"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size" />
+                <Button
+                    android:layout_weight="1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Quantity"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size" />
+                <Button
+                    android:layout_weight="1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Duration"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size" />
+                <Button
+                    android:layout_weight="1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Slot"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="6">
+
+                    <TextView
+                        android:id="@+id/drug_name"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="drug_name"
+                        android:textSize="@dimen/text_size" />
+
+                    <TextView
+                        android:id="@+id/strength"
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="strength"
+                        android:textSize="@dimen/text_size" />
+
+                    <TextView
+                        android:id="@+id/take"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginBottom="10dp"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="take"
+                        android:textSize="@dimen/text_size" />
+
+                    <TextView
+                        android:id="@+id/quantity"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginBottom="10dp"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="quantity"
+                        android:textSize="@dimen/text_size" />
+
+
+                    <TextView
+                        android:id="@+id/duration"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="duration"
+                        android:textSize="@dimen/text_size" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                       &lt;!&ndash; <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="4">
+
+                            <TextView
+                                android:text="M"
+                                android:id="@+id/morningc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:text="A"
+
+                                android:id="@+id/afternoonc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:text="E"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="1" />
+
+                            <CheckBox
+                                android:text="N"
+
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="1" />
+
+                        </LinearLayout>&ndash;&gt;
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <CheckBox
+                                android:text="M"
+                                android:id="@+id/morning"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <CheckBox
+                                android:text="A"
+                                android:id="@+id/afternoon"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <CheckBox
+                                android:text="E"
+
+                                android:id="@+id/evening"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <CheckBox
+                                android:id="@+id/night"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <CheckBox
+                                android:id="@+id/week"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </HorizontalScrollView>
+
+-->
+
+</LinearLayout>
+
+
+

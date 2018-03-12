@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#d34836</color>
+    <color name="colorPrimaryDark">#d34836</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="bfurn_light">#d34836</color>
+    <color name="bfurn_dark">#d34836</color>
+    <!--   <color name="bfurn_light">#DC8300</color>
+       <color name="bfurn_dark">#DC8300</color>  -->
+    <color name="overlay">#80000000</color>
+
+    <color name="cb_grey">#e5e5e5</color>
+    <color name="green">#32CD32</color>
+   
+    <color name="bg_grey">#f4f5f7</color>
+    <color name="dark_grey">#D3D3D3</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+    <color name="textview_backgroung">#f1f1f1</color>
+    <color name="bgactivity">#b5e88b65</color>
+
+    <color name="bg_msg_from">#FF0099ff</color>
+    <color name="bg_msg_you">#e5e7eb</color>
+
+
+</resources>

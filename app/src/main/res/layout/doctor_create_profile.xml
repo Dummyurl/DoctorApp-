@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_loginActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+
+            <!--User email edt-->
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+                    android:hint="Doctor Full Name"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:inputType="text"/>
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+            <!--User email edt-->
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_email"
+                    android:hint="Doctor Email"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:inputType="textEmailAddress"/>
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+            <!--User email edt-->
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/contact"
+                    android:hint="Doctor Contact Number"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:inputType="number"/>
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+         <!--   <RadioGroup
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Male"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:text="Female"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+
+            </RadioGroup>
+
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_key"
+                    android:hint="Enter City"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:inputType="text"/>
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_cost"
+                    android:hint="Select Specialization"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:inputType="text"/>
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_tax"
+                    android:hint="Years of Experience"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:inputType="text"/>
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:background="#f1f1f1"
+                android:text="Equcational Details "
+                android:layout_height="wrap_content" />
+
+
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Degree"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:inputType="text"/>
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="College / University"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:inputType="text"/>
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_total"
+                    android:hint="Year"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:inputType="text"/>
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:background="#f1f1f1"
+                android:text="Registration Details "
+                android:layout_height="wrap_content" />
+
+
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Registration Number"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:inputType="text"/>
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Registration Council"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:inputType="text"/>
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Registration Year"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:inputType="text"/>
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:background="#f1f1f1"
+                android:text="Upload Proofs"
+                android:layout_height="wrap_content" />
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageregistrationproof"
+                    android:layout_width="60dp"
+                    android:src="@drawable/placeholder_user"
+                    android:layout_height="60dp" />
+
+                <LinearLayout
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/imageregistrationproof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Add Registration Proof Photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:background="#ccc"
+                android:layout_height="1dp"/>
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageequproof"
+                    android:layout_width="60dp"
+                    android:src="@drawable/placeholder_user"
+                    android:layout_height="60dp" />
+
+                <LinearLayout
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/imageequproof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Add Qualification Proof Photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:background="#ccc"
+                android:layout_height="1dp"/>
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageidproof"
+                    android:layout_width="60dp"
+                    android:src="@drawable/placeholder_user"
+                    android:layout_height="60dp" />
+
+                <LinearLayout
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/imageidproof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Add ID Proof Photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:background="#ccc"
+                android:layout_height="1dp"/>
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageproof"
+                    android:layout_width="60dp"
+                    android:src="@drawable/placeholder_user"
+                    android:layout_height="60dp" />
+
+                <LinearLayout
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/imageproof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Add Profile Photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:background="#ccc"
+                android:layout_height="1dp"/>
+
+
+-->
+
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/create"
+        android:text="Create Profile"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_button"
+        android:layout_gravity="center"
+        />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
+

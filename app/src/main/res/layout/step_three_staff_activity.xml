@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+         <!--   <Button
+                android:id="@+id/more"
+                android:layout_marginTop="20dp"
+                android:textColor="#000"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/cb_grey"
+                android:layout_alignParentRight="true"
+                android:layout_width="match_parent"
+                android:text="Add more Doctors"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:background="#ccc"
+                android:layout_height="1dp"/>
+
+            &lt;!&ndash;    <include
+                    layout="@layout/doctor_list_item"/>&ndash;&gt;
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/doctor_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>-->
+
+
+
+
+            <!--
+
+                        <include
+                            layout="@layout/doctor_staff_list_item"/>
+
+            -->
+            <Button
+                android:id="@+id/morestaff"
+                android:layout_marginTop="20dp"
+                android:textColor="#000"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/cb_grey"
+                android:layout_alignParentRight="true"
+                android:layout_width="match_parent"
+                android:text="Add more Staff"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:background="#ccc"
+                android:layout_height="1dp"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/staff_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/previous"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:text="Previous"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/next"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:text="Next >>"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

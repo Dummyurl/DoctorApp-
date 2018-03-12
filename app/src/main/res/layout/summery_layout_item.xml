@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/parent"
+    android:background="@color/cb_grey"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<android.support.v7.widget.CardView
+    app:cardCornerRadius="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:layout_weight="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.5"
+                android:text="Hospital Name:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/hospital_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size" />
+
+
+        </LinearLayout>
+
+
+        <include layout="@layout/item_devider"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.5"
+                android:text="Patient Name :"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size" />
+
+
+        </LinearLayout>
+
+
+        <include layout="@layout/item_devider"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.5"
+                android:text="Mode Of Appointement :"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size" />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/item_devider"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.5"
+                android:text="Category:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size" />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/item_devider"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.5"
+                android:text="Time:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size" />
+
+
+        </LinearLayout>
+
+
+        <include layout="@layout/item_devider"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.5"
+                android:text="Date:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size" />
+
+
+        </LinearLayout>
+        <include layout="@layout/item_devider"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.5"
+                android:text="Total Amount :"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/total_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size" />
+
+
+        </LinearLayout>
+
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="1">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:text="Payment Amount:"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textSize="@dimen/text_size" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/payment_amount"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:textSize="@dimen/text_size" />-->
+
+
+        <!--</LinearLayout>-->
+        <!--<include layout="@layout/item_devider"/>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="1">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:text="Payed Amount:"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textSize="@dimen/text_size" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/payed_amount"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:textSize="@dimen/text_size" />-->
+
+
+        <!--</LinearLayout>-->
+        <!--<include layout="@layout/item_devider"/>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="1">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:text="Due Amount:"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textSize="@dimen/text_size" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/due_amount"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:textSize="@dimen/text_size" />-->
+
+
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>
